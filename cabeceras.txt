@@ -1,0 +1,11 @@
+estatus,tomo,recNum,_id,pslNum,pslSN,horseName,imported,area,foalingDate,sex,color,markings,markingImg,pv,otherId,brandCode,breederId,ownerId,issueDate,castrated,deceased,reIssue,notes,premios,alerta,lastUpdate,studBookPar1,studBookPar2,done,val1,val2,val3,val4,val5,val6,val7,val8,noCriador
+
+Status,Tomo,Rec Number,Registration Num_idber,PSL Number,PSL SN,Horse's Name,Country Born,area,Foaling Date,Sex,Color,Markings,Markings code,PV,Other ID,Brand Code,Breeder's ID,Owner's ID,Issue Date,Castrated,Deceased,Re-Issued,Notes,Premios,Alert,Last Updated,Studbook par1,Studbook par2,Done?,val1,val2,val3,val4,val5,val6,val7,val8,nocriador
+
+
+
+_id,estatus,regNum,horseName,breeder,sireRegNum,sireRefNum,sire,damBreeder,damRegNum,damRefNum,dam,damBreeder,sex,bloodTypeCaseNo,microchip,apslNo,apslSn,otherNo,ownerId,Color,studBookPag,Misc,AGA,DES,PRI,HUC,REG,MAR
+
+
+
+
