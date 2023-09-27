@@ -30,6 +30,11 @@ const PreRegistroSchema = new Schema({
     type: String,
     ref: 'Owner',
   },
+  ownerId: {
+    //Owner Id
+    type: String,
+    ref: 'Owner',
+  },
   sireRegNum: {
     type: String,
     ref: 'Horse',
@@ -41,6 +46,10 @@ const PreRegistroSchema = new Schema({
   tipoRegistro: {
     type: String,
     enum: ['PSL', 'SOLO MEXICO', 'CRUZADO'],
+  },
+  nacimientos: {
+    type: ObjectId,
+    ref: 'Nacimiento',
   },
   deleted: {
     type: Boolean,
