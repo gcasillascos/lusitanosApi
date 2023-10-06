@@ -56,6 +56,20 @@ exports.getPedigreesAll = asyncHandler(async (req, res, next) => {
   });
 });
 
+
+// @desc      Create pedigree
+// @route     POST /api/v1/pedigree
+// @access    Private/Admin
+exports.createPedigree = asyncHandler(async (req, res, next) => {
+  const pedigree = await Pedigrees.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    data: pedigree,
+  });
+});
+
+
 // @desc      Get horses by Name
 // @route     GET /api/v1/pedigree/name/:name
 // @access    Private/Admin, publisher

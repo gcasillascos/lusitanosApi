@@ -4,7 +4,7 @@ const {
   getPedigreesAll,
   getPedigreeByNum,
   getPedigreeByName,
-  addPedigree,
+  createPedigree,
   updatePedigree,
   deletePedigree,
 } = require('../controllers/pedigrees');
@@ -19,8 +19,8 @@ const { protect, authorize } = require('../middleware/auth');
 
 // router.use(protect);
 
-router.route('/').get(advancedResults(Pedigrees), getPedigrees);
-/* .post(protect, authorize('publisher', 'admin'), addPedigree) */
+router.route('/').get(advancedResults(Pedigrees), getPedigrees)
+ .post(protect, authorize('publisher', 'admin'), createPedigree) 
 
 router.route('/:id').get(getPedigreeByNum);
 /*   .put(protect, authorize('publisher', 'admin'), updatePedigree)

@@ -26,13 +26,13 @@ router.use(authorize('publisher', 'admin'));
 router
   .route('/')
   .get(advancedResults(PreRegistros), getPreRegistros)
-   .post(createPreRegistro)
+   .post(createPreRegistro);
 
  router
    .route('/:id')
   .get(getPreRegistro)
    .put(updatePreRegistro)
-   .delete(deletePreRegistro)
+   .delete(deletePreRegistro);
 
 
 
